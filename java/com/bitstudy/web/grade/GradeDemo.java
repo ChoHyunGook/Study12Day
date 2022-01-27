@@ -34,19 +34,11 @@ import java.util.Scanner;
  */
 public class GradeDemo {
 
-    public static void main(String[] args){
-        Scanner scanner =new Scanner(System.in);
+    public String execute(String name,int kor,int eng,int math){
         GradeApp gradeApp = new GradeApp();
+            return "";
 
-        for (int i=2;i<3; i++){
-            System.out.println(i+"번학생 국어 영어 수학 점수를 순서대로 입력하세요.");
-            String name = scanner.next();
-            int kor = scanner.nextInt();
-            int eng = scanner.nextInt();
-            int math = scanner.nextInt();
-            String res = gradeApp.grade(name,kor,eng,math);
-            System.out.println(res);
         }
 
     }
-}
+

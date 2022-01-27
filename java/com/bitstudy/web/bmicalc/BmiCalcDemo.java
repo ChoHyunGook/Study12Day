@@ -15,17 +15,11 @@ import java.util.Scanner;
  */
 
 public class BmiCalcDemo {
-    public static void main(String[] args){
-        Scanner scan = new Scanner(System.in);
+    public String execute(String name,double inch,int height){
+
         BmiCalcApp bmiCalcApp= new BmiCalcApp();
-        System.out.println(bmiCalcApp.MAIN_NAME);
-        System.out.println("성함을 입력하세요.");
-        System.out.println("키를 입력하세요.(예시 172cm => 1.72)");
-        System.out.println("몸무게를 입력하세요.");
-        String name = scan.next();
-        double inch = scan.nextDouble();
-        int height = scan.nextInt();
-        String res = bmiCalcApp.bmCalc(name, height, inch);
-        System.out.println(res);
+
+        return bmiCalcApp.bmCalc(name, height, inch);
+
     }
 }

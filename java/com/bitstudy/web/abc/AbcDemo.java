@@ -14,10 +14,9 @@ import java.util.Scanner;
  * 2022-01-26         chohyungook        최초 생성
  */
 public class AbcDemo {
-    public static void main(String[] args){
-        Scanner scanner =new Scanner(System.in);
+    public String execute(){
+
         AbcApp abcApp =new AbcApp();
-        String res = abcApp.abc();
-        System.out.println(res);
+        return abcApp.abc();
     }
 }

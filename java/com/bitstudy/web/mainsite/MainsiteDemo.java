@@ -14,15 +14,11 @@ import java.util.Scanner;
  * 2022-01-25         chohyungook        최초 생성
  */
 public class MainsiteDemo {
-    public static void main(String[] args){
-    Scanner scanner = new Scanner(System.in);
-    MainsiteApp mainsiteApp = new MainsiteApp();
+    public String execute(String search){
 
-        System.out.println(mainsiteApp.MAIN_NAME);
-        System.out.println("Google 검색 또는 URL 입력");
-        String search = scanner.next();
-        String result = mainsiteApp.getSearch(search);
-        System.out.println(result);
+    MainsiteApp mainsiteApp = new MainsiteApp();
+        return mainsiteApp.getSearch(search);
+
 
     }
 }
