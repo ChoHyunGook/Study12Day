@@ -1,4 +1,4 @@
-package com.bitstudy.web;
+package com.bitstudy.web.studyforinfo;
 
 /**
  * packageName: com.bitstudy.web

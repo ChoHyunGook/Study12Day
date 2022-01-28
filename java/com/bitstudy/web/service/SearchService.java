@@ -1,4 +1,6 @@
-package com.bitstudy.web.mainsite;
+package com.bitstudy.web.service;
+
+import com.bitstudy.web.domain.SearchDTO;
 
 /**
  * packageName: com.bitstudy.web

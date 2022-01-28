@@ -1,4 +1,4 @@
-package com.bitstudy.web.bmicalc;
+package com.bitstudy.web.domain;
 
 /**
  * packageName: com.bitstudy.web.bmicalc
@@ -21,6 +21,9 @@ public class BmiCalcDTO {
     private String name;
     private int height;
     private double inch;
+    private double bm = height / inch / inch;
+
+
 
     public String getName(){
         return name;
@@ -39,6 +42,12 @@ public class BmiCalcDTO {
     }
     public void setInch(double inch){
         this.inch=inch;
+    }
+    public double getBm(){
+        return bm;
+    }
+    public void setBm(double bm){
+        this.bm=bm;
     }
 
 

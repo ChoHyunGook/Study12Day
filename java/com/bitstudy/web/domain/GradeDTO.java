@@ -1,4 +1,4 @@
-package com.bitstudy.web.grade;
+package com.bitstudy.web.domain;
 
 
 /**
@@ -43,6 +43,9 @@ public class GradeDTO {
     public void setMath(int math){
         this.math=math;
     }
+
+
+
 }
 
 

@@ -1,4 +1,4 @@
-package com.bitstudy.web.calc;
+package com.bitstudy.web.domain;
 
 /**
  * packageName: com.bitstudy.web.calc

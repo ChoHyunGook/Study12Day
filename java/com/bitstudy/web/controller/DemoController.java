@@ -1,17 +1,15 @@
 package com.bitstudy.web.controller;
 
-
-import com.bitstudy.web.bmicalc.BmiCalcDTO;
-import com.bitstudy.web.bmicalc.BmiService;
-import com.bitstudy.web.calc.CalcDTO;
-import com.bitstudy.web.calc.ClacService;
-import com.bitstudy.web.grade.GradeDTO;
-import com.bitstudy.web.grade.GradeService;
-import com.bitstudy.web.login.LoginDTO;
-import com.bitstudy.web.login.LoginService;
-import com.bitstudy.web.mainsite.SearchDTO;
-import com.bitstudy.web.mainsite.SearchService;
-
+import com.bitstudy.web.domain.BmiCalcDTO;
+import com.bitstudy.web.service.BmiService;
+import com.bitstudy.web.domain.CalcDTO;
+import com.bitstudy.web.service.ClacService;
+import com.bitstudy.web.domain.GradeDTO;
+import com.bitstudy.web.service.GradeService;
+import com.bitstudy.web.domain.LoginDTO;
+import com.bitstudy.web.service.LoginService;
+import com.bitstudy.web.domain.SearchDTO;
+import com.bitstudy.web.service.SearchService;
 import java.util.Scanner;
 
 /**
@@ -19,24 +17,27 @@ import java.util.Scanner;
  * fileName        : DemoController
  * author           : chohyungook
  * date               : 2022-01-27
- * desc             :
+ * desc             : MVC>컨트롤러
  * ================================
  * DATE              AUTHOR        NOTE
  * ================================
  * 2022-01-27         chohyungook        최초 생성
+ * 2022-01-28         chohyungook        수정
  */
+
+
 public class DemoController {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         BmiCalcDTO bmi =new BmiCalcDTO();
-        BmiService bmiService = new BmiService();
         CalcDTO calc= new CalcDTO();
-        ClacService clacService =new ClacService();
         GradeDTO grade =new GradeDTO();
-        GradeService gradeService=new GradeService();
         LoginDTO login = new LoginDTO();
-        LoginService loginService = new LoginService();
         SearchDTO search = new SearchDTO();
+        BmiService bmiService = new BmiService();
+        ClacService clacService =new ClacService();
+        GradeService gradeService=new GradeService();
+        LoginService loginService = new LoginService();
         SearchService searchService = new SearchService();
 
         while(true){

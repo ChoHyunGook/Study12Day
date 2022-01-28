@@ -1,4 +1,4 @@
-package com.bitstudy.web.mainsite;
+package com.bitstudy.web.domain;
 
 /**
  * packageName: com.bitstudy.web

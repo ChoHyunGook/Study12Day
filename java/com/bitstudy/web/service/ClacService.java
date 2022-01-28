@@ -1,7 +1,7 @@
-package com.bitstudy.web.calc;
+package com.bitstudy.web.service;
 
 
-import com.bitstudy.web.bmicalc.BmiCalcDTO;
+import com.bitstudy.web.domain.CalcDTO;
 
 /**
  * packageName: com.bitstudy.web.calc

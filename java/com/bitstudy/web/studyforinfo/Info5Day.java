@@ -1,4 +1,4 @@
-package com.bitstudy.web;
+package com.bitstudy.web.studyforinfo;
 
 /**
  * packageName: com.bitstudy.web
@@ -19,6 +19,7 @@ public class Info5Day {
     //arg>param>arg
     //증기>물>얼음//
     //*캡슐화*//
+    //*MVC패턴>
 
 
 }

@@ -1,6 +1,6 @@
-package com.bitstudy.web.grade;
+package com.bitstudy.web.service;
 
-import com.bitstudy.web.calc.CalcDTO;
+import com.bitstudy.web.domain.GradeDTO;
 
 /**
  * packageName: com.bitstudy.web.grade
@@ -34,21 +34,12 @@ import com.bitstudy.web.calc.CalcDTO;
  */
 public class GradeService {
 
-    public String getGrade(GradeDTO grade){
+    public String getGrade(GradeDTO grade) {
+
 
             int total = grade.getKor()+grade.getEng()+grade.getMath();
             int avg= total/3;
             String pass = (avg>=60) ? "합격" : "불합격" ;
-
-        /*total =kor+eng+math;
-        avg = total/3;*/
-
-
-        /*if (avg>=60){
-            pass ="합격";
-        }else{
-            pass ="불합격";
-        }*/
 
 
             String gr = String.format(" * ########## %s ########\n" +
@@ -66,32 +57,6 @@ public class GradeService {
     }
 
 
-        /*
-        total = kor+eng+math;
-        avg = total/3;
-
-
-        if (60<=avg){
-            pass = "합격";
-        }else{
-            pass = "불합격";
-        }
-
-        String.format(" * ########## %s ########\n" +
-                        " * 이름: %s\n" +
-                        " * > 국어: %d점\n" +
-                        " * > 영어: %d점\n" +
-                        " * > 수학: %d점\n" +
-                        " * 총점: %d점\n" +
-                        " * 평균(정수): %d점\n" +
-                        " * 합격여부: %s\n" +
-                        " * #######################",
-                GRADE_TITLE,name,kor,eng,math,total,avg,pass);
-
-        return pass;
-    }
-
-}*/
 
 
 
