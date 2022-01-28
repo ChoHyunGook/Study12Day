@@ -1,7 +1,5 @@
 package com.bitstudy.web.mainsite;
 
-import java.util.Scanner;
-
 /**
  * packageName: com.bitstudy.web
  * fileName        : MainsiteDemo
@@ -13,11 +11,11 @@ import java.util.Scanner;
  * ================================
  * 2022-01-25         chohyungook        최초 생성
  */
-public class MainsiteDemo {
-    public String execute(String search){
+public class SearchService {
+    public String getSearch(SearchDTO search){
 
-    MainsiteApp mainsiteApp = new MainsiteApp();
-        return mainsiteApp.getSearch(search);
+            return String.format("%s를 검색합니다.",
+                    search.getSearch());
 
 
     }

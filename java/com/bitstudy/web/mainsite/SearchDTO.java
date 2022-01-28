@@ -11,15 +11,18 @@ package com.bitstudy.web.mainsite;
  * ================================
  * 2022-01-25         chohyungook        최초 생성
  */
-public class MainsiteApp {
+public class SearchDTO {
     public static String MAIN_NAME = "Google";
     private String search = "";
 
-    public String getSearch(String search){
+    public String getSearch(){
+        return search;
+    }
+    public void setSearch(String search){
         this.search=search;
-
-        return String.format("%s를 검색합니다.",
-                this.search);
     }
 
-}
+
+    }
+
+

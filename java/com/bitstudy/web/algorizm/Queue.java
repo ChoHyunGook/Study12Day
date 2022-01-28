@@ -2,7 +2,7 @@ package com.bitstudy.web.algorizm;
 
 /**
  * packageName: com.bitstudy.web.algorizm
- * fileName        : Stack
+ * fileName        : Queue
  * author           : chohyungook
  * date               : 2022-01-27
  * desc             :
@@ -11,11 +11,10 @@ package com.bitstudy.web.algorizm;
  * ================================
  * 2022-01-27         chohyungook        최초 생성
  */
-public class Stack {
-    public int[] solution(int[] prices) {
-        System.out.println("=== 주식가격 ===");
-        int[] answer = {};
-
+public class Queue {
+    public int solution(int bridge_length, int weight, int[] truck_weights) {
+        System.out.println("=== 다리를 지나는 트럭 ===");
+        int answer = 0;
         return answer;
     }
 }
