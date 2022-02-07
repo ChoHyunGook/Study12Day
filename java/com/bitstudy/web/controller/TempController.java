@@ -61,7 +61,8 @@ public class TempController {
                 "DFS", "스택", "그래프", "탐욕법", "이분탐색",
                 "BFS", "큐"};
         String s = "";
-        /*System.out.println("Q4.팀원별 과제수를 출력하세요 예)권혜민(3개), 조현국(3개), 김진영(2개),김한슬(2개),서성민(2개)");
+        System.out.println("Q4.팀원별 과제수를 출력하세요 " +
+                "예)권혜민(3개), 조현국(3개), 김진영(2개),김한슬(2개),서성민(2개)");
         int count = 0;
         String countManager = arr[0] + "(3개)," + arr[1] + "(3개)," + arr[2] + "(2개)," + arr[3] + "(2개)," + arr[4] + "(2개)";
         countManager += arr[0] + "(3개),";
@@ -98,7 +99,7 @@ public class TempController {
         System.out.println(arr[1] + "의 카운트는 " + count1);
         System.out.println(arr[2] + "의 카운트는 " + count2);
         System.out.println(arr[3] + "의 카운트는 " + count3);
-        System.out.println(arr[4] + "의 카운트는 " + count4);*/
+        System.out.println(arr[4] + "의 카운트는 " + count4);
 
 
 
@@ -137,7 +138,7 @@ public class TempController {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i].equals("큐")) {
                 for (int j = 0; j < 2; j++)
-                    s+=arr[i]+" 를 담당한 사람 :"+arr[i - j * 15];
+                    s+=arr[16]+" 를 담당한사람 : "+arr[i - j * 15];
             }
             if (i == 17) {
                 break;

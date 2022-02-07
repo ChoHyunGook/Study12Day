@@ -19,9 +19,9 @@ package com.bitstudy.web.domain;
 public class BmiCalcDTO {
     public static String MAIN_NAME="BMI 계산기";
     private String name;
-    private int height;
+    private int weight;
     private double inch;
-    private double bm = height / inch / inch;
+    private double bm = weight / inch / inch;
 
 
 
@@ -31,11 +31,11 @@ public class BmiCalcDTO {
     public void setName(String name){
         this.name=name;
     }
-    public int getHeight(){
-        return height;
+    public int getWeight(){
+        return weight;
     }
-    public void setHeight(int height){
-        this.height=height;
+    public void setWeight(int weight){
+        this.weight=weight;
     }
     public double getInch(){
         return inch;
