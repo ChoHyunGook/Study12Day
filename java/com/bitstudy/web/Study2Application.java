@@ -13,16 +13,13 @@ import java.util.Scanner;
 public class Study2Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(Study2Application.class, args);
-        Scanner scanner=new Scanner(System.in);
         AuthController authController=new AuthController();
         AlgoController algoController=new AlgoController();
         QuizController quizController=new QuizController();
         PhoneController phoneController=new PhoneController();
-        authController.excute(scanner);
-        algoController.excute(scanner);
-        quizController.excute(scanner);
-        phoneController.excute(scanner);
+
+        SpringApplication.run(Study2Application.class, args);
+        Scanner scanner=new Scanner(System.in);
 
         while (true){
             System.out.println("[MAIN_MENU]\n 0.EXIT\n1.AUTH\n2.ALGORITHM\n3.QUIZ\n4.OOP");
@@ -30,12 +27,16 @@ public class Study2Application {
                 case "0":
                     System.out.println("EXIT");return;
                 case "1":
+                    System.out.println("AUTH");
                     authController.excute(scanner);break;
                 case "2":
+                    System.out.println("ALGORITHM");
                     algoController.excute(scanner);break;
                 case "3":
+                    System.out.println("QUIZ");
                     quizController.excute(scanner);break;
                 case "4":
+                    System.out.println("PHONE");
                     phoneController.excute(scanner);break;
                 default:
                     System.out.println("올바른 메뉴를 입력하세요.");break;
