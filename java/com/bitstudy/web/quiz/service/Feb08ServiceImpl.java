@@ -78,12 +78,12 @@ public class Feb08ServiceImpl implements Feb08Service{
                 System.out.println("비밀번호 오류 재입력해주세요.");
                 pw=Integer.parseInt(scanner.nextLine());
             }
-            if (menu==1) {
+            if (menu==0) {
                 if (pw == 1004) {
                     System.out.println(String.format("고객님의 잔액은 %d입니다.", total));
                 }
             }
-            if (menu==2) {
+            if (menu==1) {
                 if (pw == 1004) {
                     System.out.println("인출하실 금액을 선택하세요." +
                             "0. 만원 1. 5만원 2. 10만원 3.50만원 4.직접입력");
@@ -110,15 +110,18 @@ public class Feb08ServiceImpl implements Feb08Service{
                             default:
                             System.out.println("올바른 번호를 입력해주세요.");break;
                     }
-                    if(menu==3){
+                }
+            }
+            if(menu==2){
                         System.out.println("입금하실 금액을 입력하세요.");
                         input=Integer.parseInt(scanner.nextLine());
                         System.out.println(String.format("입금하실금액은 %d이며 입금되어 잔액은 %d입니다.",input,total+input));
                     }
-                }
-            }
+        if(menu==3){
+            System.out.println("EXIT");
+            return;
         }
-
+        }
 
     }
 

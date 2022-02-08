@@ -17,7 +17,6 @@ public class Study2Application {
         AlgoController algoController=new AlgoController();
         QuizController quizController=new QuizController();
         PhoneController phoneController=new PhoneController();
-
         SpringApplication.run(Study2Application.class, args);
         Scanner scanner=new Scanner(System.in);
 
