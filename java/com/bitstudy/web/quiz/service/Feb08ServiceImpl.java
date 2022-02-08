@@ -20,6 +20,17 @@ import java.util.Scanner;
 public class Feb08ServiceImpl implements Feb08Service{
     @Override
     public void quiz1() {
+        int i, dan;
+        for (dan = 2; dan <= 9; dan++) {
+            System.out.print("[" + dan + "단]\t");
+        }
+        System.out.println();
+        for (i = 1; i <= 9; i++) {
+            for (dan = 2; dan <= 9; dan++) {
+                System.out.print(dan + "*" + i + "=" + i * dan + "\t");
+            }
+            System.out.println();
+        }
 
     }
 
@@ -46,9 +57,6 @@ public class Feb08ServiceImpl implements Feb08Service{
 //        4. 사용자가 종료를 원할 때까지 반복 실행한다.
 //
 //        5. 예금이 인출 된 후에는 인출된 만큼 잔액이 감소해야 한다.
-
-        System.out.println("사용하실 메뉴를 선택해주세요.\n" +
-                "0.잔액조회 1.현금인출 2.입금 3.종료");
         int menu =  Integer.parseInt(scanner.nextLine());//사용자 입력값 저장변수
         int total= 200000;//잔액
         int output=0;//출금
@@ -58,6 +66,8 @@ public class Feb08ServiceImpl implements Feb08Service{
         int m5=50000;
         int m10=100000;
 
+        System.out.println("사용하실 메뉴를 선택해주세요.\n" +
+                "0.잔액조회 1.현금인출 2.입금 3.종료");
 
 
         while (menu!=4){
@@ -99,6 +109,11 @@ public class Feb08ServiceImpl implements Feb08Service{
                             } break;
                             default:
                             System.out.println("올바른 번호를 입력해주세요.");break;
+                    }
+                    if(menu==3){
+                        System.out.println("입금하실 금액을 입력하세요.");
+                        input=Integer.parseInt(scanner.nextLine());
+                        System.out.println(String.format("입금하실금액은 %d이며 입금되어 잔액은 %d입니다.",input,total+input));
                     }
                 }
             }
