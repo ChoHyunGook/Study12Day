@@ -1,9 +1,5 @@
 package com.bitstudy.web.studyforinfo;
 
-import com.bitstudy.web.domain.GradeDTO;
-
-import java.util.Scanner;
-
 /**
  * packageName: com.bitstudy.web.studyforinfo
  * fileName        : Info6Day
