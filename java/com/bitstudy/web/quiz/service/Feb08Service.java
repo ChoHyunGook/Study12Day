@@ -18,9 +18,9 @@ import java.util.Scanner;
  * 2022-02-08         chohyungook        최초 생성
  */
 public interface Feb08Service {
-    void quiz1();
-    void quiz2();
+    void quiz1(Scanner scanner);
+    void quiz2(Scanner scanner);
     void quiz3();
     void quiz4(Scanner scanner);
-    void quiz5();
+    void quiz5(Scanner scanner);
 }
