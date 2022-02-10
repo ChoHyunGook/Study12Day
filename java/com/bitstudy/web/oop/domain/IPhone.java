@@ -1,5 +1,7 @@
 package com.bitstudy.web.oop.domain;
 
+import com.bitstudy.web.auth.domain.CalcDTO;
+
 /**
  * packageName: com.bitstudy.web.oop.domain
  * fileName        : IPhone
@@ -13,7 +15,7 @@ package com.bitstudy.web.oop.domain;
  *아이폰은 검색(search) 속성이 추가된다.
  * 잡스는 아이폰을 휴대폰으로 불리는것을 거부했다. KIND 는 아이폰이다.
  */
-public class IPhone extends CelPhone{
+public class IPhone extends CelPhone {
     public final static String KIND="아이폰";
     protected String search;
 

@@ -136,7 +136,9 @@ public class QuizController {
                                     break;
                             }
                         }
-                    case "4":break;
+                    case "4":
+
+                        break;
 
                     default:
                     System.out.println("올바른 메뉴를 선택하세요.");break;

@@ -11,8 +11,12 @@ package com.bitstudy.web.auth.domain;
  * ================================
  * 2022-01-26         chohyungook        최초 생성
  */
-public class LoginDTO {
+public class UserDTO {
     public static String webSite = "Login Web";
+
+    private final static UserDTO userDTO=new UserDTO();
+    private  UserDTO(){}
+    public static UserDTO getInstance(){return userDTO;}
 
     private String id;
     private String pw;

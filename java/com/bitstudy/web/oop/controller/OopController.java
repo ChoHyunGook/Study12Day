@@ -75,9 +75,9 @@ public class OopController {
 
                         }break;
                 case "3":
-                    System.out.println("추상화이다.");;break;
+                    System.out.println("임플리먼트 추상화이다.");;break;
                 case "4":
-                    System.out.println("다형성이다.");;break;
+                    System.out.println("타입의 변경이 다형성이다.");;break;
                 default:
                     System.out.println("정확한 메뉴명을 입력해주세요.");;break;
             }
