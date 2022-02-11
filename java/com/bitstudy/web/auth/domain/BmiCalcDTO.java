@@ -19,9 +19,14 @@ package com.bitstudy.web.auth.domain;
 public class BmiCalcDTO{
     public static String MAIN_NAME="BMI 계산기";
 
+
+
     private final static BmiCalcDTO bmiCalcDTO=new BmiCalcDTO();
     private  BmiCalcDTO(){}
     public static BmiCalcDTO getInstance(){return bmiCalcDTO;}
+
+
+
 
     private String name;
     private int weight;
